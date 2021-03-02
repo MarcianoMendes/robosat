@@ -13,7 +13,7 @@ async function robo()
 {
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
-    const {usuario,senha,datainicial,datafinal,cnpj} = require('./parametros.json');
+    const {usuario,senha,datainicial,datafinal,cnpj,chaveapi} = require('./parametros.json');
     const campoUsuario = '#Body_ctl00_tbxUsername';
     const campoSenha = '#Body_ctl00_tbxUserPassword';
     const campoDataInicial = '#ctl00_ctl00_Main_Main_txtPerInicial';
